@@ -7,6 +7,7 @@
     # Variables 'resgrp' and 'location' need to be provided at command line with arg --extra-vars
     templateLink: 'https://raw.githubusercontent.com/saumil1991/101-vm-simple-windows/master/azuredeploy.json'
     paramsLink: 'https://raw.githubusercontent.com/saumil1991/101-vm-simple-windows/master/azuredeploy.parameters.json'
+    deploymentName: 'Dev Deployment through Ansible Tower'
    
   tasks:
   - name: Deploy ARM template
@@ -17,3 +18,4 @@
         location: 'Central India'
         template_link: '{{ templateLink }}'
         parameters_link: '{{ paramsLink }}'
+        deployment_name: '{{ deploymentName }}'
