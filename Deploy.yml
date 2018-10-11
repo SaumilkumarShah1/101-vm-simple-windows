@@ -17,4 +17,3 @@
         location: 'Central India'
         template_link: '{{ templateLink }}'
         parameters_link: '{{ paramsLink }}'
-        deployment_name: 'Dev Deployment through Ansible Tower'
